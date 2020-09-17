@@ -1,0 +1,182 @@
+html{
+    box-sizing: border-box;
+}
+body{margin:0;}
+
+@media only screen and (max-width: 680px) { 
+    .desktop{ display: none;}
+}
+
+@media screen and (min-width: 768px) {  
+    .mobile{display: none;}
+}
+
+#wrapper{
+	display: flex;
+	flex-flow: column nowrap;}
+
+#topnav{
+	display: flex;
+	
+	border-bottom:3px solid #000;
+	width: 100vw;
+	
+	justify-content: space-around;
+		
+	a{	width:10%;
+		text-align: center;
+				text-decoration: none; color:black;
+		&:hover{text-decoration:underline;}
+	}
+    #cclogo{
+        width:30%;
+        @media (max-width: 767px){
+            width:58px;
+        }
+    }
+    #collapsableMenu{
+        display: flex;
+        width:90%;
+        align-items:center;
+        justify-content: space-around;
+        @media (min-width: 767px){
+            height: 58px;
+        }
+        @media (max-width: 767px){
+            display: none;
+            width:100%;
+            flex-flow:column;
+            position: fixed;
+            z-index: 1;
+            top:78px;
+            background-color: #fff;
+            padding-left:3%;
+            font-size: 1.4rem;
+            align-items:flex-start;
+        }
+    }
+    @media (max-width: 767px){
+        justify-content:space-between;
+        padding: 1% 5%;
+        width: auto;
+        align-items:center;
+    }
+}
+#lander{
+	display: flex;
+        flex-flow: column nowrap;
+        align-items:center;
+	background: url("/assets/img/castlefridge.jpg") no-repeat center center fixed;
+	background: url("/assets/img/castlefridge.jpg") fixed no-repeat center center/cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;	
+    #ylogo{margin:9%; margin-bottom: 5%;}
+    h1{
+        position:relative;
+        top:20%;
+        text-align: center;
+        display: block;
+        font-size: 76px;
+        margin: 2% 0 2% 0;
+        color: #000;
+        background-color: #fff;
+		padding: 4px;
+		box-shadow: 8px 7px #000;
+    	border: 2px solid black;
+    	font-weight: 300;
+        @media (max-width: 767px) {
+            font-size: 30px;
+        }
+    }
+    h2{background-color: white;
+    	border:3px solid black;
+    	margin: 3%;
+    	padding:1%;
+    	position:relative;
+    	top:20%;
+
+        @media (max-width: 767px) {
+            font-size: 1.02rem;    
+        }
+	}
+        @media (max-width: 767px) {
+            background: url("./img/castlefridge.jpg") center no-repeat cover;
+            
+            h1{font-size:2.5rem;}
+
+        
+        }
+        	
+}
+#main{
+	width:80%;
+	margin:auto;
+	background-color: white;
+    border:3px solid black;
+    margin: 3%;
+    padding:1%;
+    position: relative;
+    top:20%;
+
+}
+
+#companies{
+	display: flex;
+	flex-flow: column nowrap;
+	align-items:center;
+	
+	h1{text-align: center;
+	background-color: white;
+    border:3px solid black;
+    margin: 3%;
+    padding:1%;}
+	
+	#clist{
+		display: flex;
+		flex-flow:row wrap;
+    	width: 80%;
+    	align-content:center;
+    	justify-content: center;
+        
+    	div { width: 15%;
+            height: auto;
+            margin: 2%;
+    		img{width: 100%;}}
+    }
+}
+
+#press{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items:center;
+    
+    h1{text-align: center;
+    background-color: white;
+    border:3px solid black;
+    margin: 3%;
+    padding:1%;}
+    
+    #plist{
+        display: flex;
+        flex-flow:row wrap;
+        width: 80%;
+        align-content:center;
+        justify-content: center;
+        
+        a { width: 15%;
+            height: auto;
+            margin: 2%;
+            img{width: 100%;}}
+    }
+}
+footer{
+	border-top:3px solid black; 
+	padding:1%;
+	text-align: center;
+	font-size: 1.2rem;}
+
+/*grid-column-start:2;
+grid-template-columns: repeat(14, calc(100%/14));*/
