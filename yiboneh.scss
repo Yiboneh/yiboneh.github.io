@@ -145,6 +145,10 @@ body{margin:0;}
             height: auto;
             margin: 2%;
     		img{width: 100%;}}
+        @media (max-width: 767px) {
+            div{width:80%;}
+        }
+
     }
 }
 

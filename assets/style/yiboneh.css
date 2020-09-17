@@ -173,6 +173,11 @@ body {
 #companies #clist div img {
   width: 100%;
 }
+@media (max-width: 767px) {
+  #companies #clist div {
+    width: 80%;
+  }
+}
 
 #press {
   display: flex;
