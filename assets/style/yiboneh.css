@@ -158,6 +158,12 @@ body {
   margin: 3%;
   padding: 1%;
 }
+#companies #quote {
+  font-weight: 100;
+  border: 2px solid;
+  padding: 1.5%;
+  font-style: italic;
+}
 #companies #clist {
   display: flex;
   flex-flow: row wrap;
