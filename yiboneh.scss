@@ -102,6 +102,7 @@ body{margin:0;}
             font-size: 1.02rem;    
         }
 	}
+    
         @media (max-width: 767px) {
             background: url("./img/castlefridge.jpg") center no-repeat cover;
             
@@ -133,7 +134,10 @@ body{margin:0;}
     border:3px solid black;
     margin: 3%;
     padding:1%;}
-	
+	#quote{font-weight: 100;
+    border: 2px solid;
+    padding: 1.5%;
+    font-style: italic;}
 	#clist{
 		display: flex;
 		flex-flow:row wrap;
