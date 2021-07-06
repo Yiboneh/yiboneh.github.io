@@ -33,6 +33,7 @@ body {
   width: 100%;
   text-align: center;
   font-family: PT Sans;
+  font-weight: 500;
 }
 .row p {
   width: 60%;
@@ -202,31 +203,30 @@ body {
   }
 }
 
-#press {
+#partners {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
 }
-#press h1 {
+#partners h1 {
   text-align: center;
   background-color: white;
-  border: 3px solid black;
   margin: 3%;
   padding: 1%;
 }
-#press #plist {
+#partners #plist {
   display: flex;
   flex-flow: row wrap;
   width: 80%;
   align-content: center;
   justify-content: center;
 }
-#press #plist a {
+#partners #plist a {
   width: 15%;
   height: auto;
   margin: 2%;
 }
-#press #plist a img {
+#partners #plist a img {
   width: 100%;
 }
 

@@ -23,7 +23,8 @@ body{margin:0;}
     justify-content: center;
     h1{ width:100%;
         text-align: center;
-        font-family: PT Sans;}
+        font-family: PT Sans;
+        font-weight: 500;}
 
     p{width:60%;}
     
@@ -170,14 +171,14 @@ body{margin:0;}
     }
 }
 
-#press{
+#partners{
     display: flex;
     flex-flow: column nowrap;
     align-items:center;
     
     h1{text-align: center;
     background-color: white;
-    border:3px solid black;
+    
     margin: 3%;
     padding:1%;}
     
