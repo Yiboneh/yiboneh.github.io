@@ -27,11 +27,15 @@ body {
   align-content: center;
   border-top: 3px solid black;
   padding: 1%;
+  justify-content: center;
 }
 .row h1 {
   width: 100%;
   text-align: center;
   font-family: PT Sans;
+}
+.row p {
+  width: 60%;
 }
 
 #topnav {
